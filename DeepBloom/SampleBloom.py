@@ -26,7 +26,7 @@ with open("dataset.json", "r") as read_file:
 before = datetime.datetime.now()
 	
 for x in data["positives"]:
-	# print x
+	print x
 	bloom.add(str(x))
 
 
@@ -43,16 +43,17 @@ nLen = len(data["negatives"])
 positiveFP = 0;
 
 for x in range(100):
-  index = random.randint(0, pLen)
-  if(data["positives"][index] not in bloom)
-  	positiveFP = positiveFP +1
+	index = random.randint(0, pLen)
+	print data["positives"][index]
+	if(str(data["positives"][index]) not in bloom):
+		positiveFP = positiveFP +1
 
 negativeFP = 0
 
 for x in range(100):
-  index = random.randint(0, pLen)
-  if(data["negatives"][index] in bloom)
-  	negativeFP = negativeFP +1
+	index = random.randint(0, pLen)
+	if(str(data["negatives"][index]) in bloom):
+		negativeFP = negativeFP +1
 
 
 
