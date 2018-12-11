@@ -24,9 +24,12 @@ with open("dataset.json", "r") as read_file:
     data = json.load(read_file)
 
 before = datetime.datetime.now()
-	
+
+int i = 0;
 for x in data["positives"]:
-	print x
+    #print x
+    if i == 100
+        break
 	bloom.add(str(x))
 
 
