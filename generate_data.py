@@ -5,6 +5,7 @@ import csv
 import random
 from enum import Enum
 import os
+import sys
 
 DATA_SIZE = 100000
 BLOCK_SIZE = 10
@@ -60,9 +61,10 @@ def generate_data(distribution, data_size = DATA_SIZE):
 			csv_writer.writerow([int(number * multiplicant), index / BLOCK_SIZE])
 
 if __name__ == "__main__":
-	generate_data(Distribution.BINOMIAL, 100)
-	generate_data(Distribution.EXPONENTIAL, 100)
-	generate_data(Distribution.LOGNORMAL, 100)
-	generate_data(Distribution.NORMAL, 100)
-	generate_data(Distribution.POISSON, 100)
-	generate_data(Distribution.RANDOM, 100)
+	data_size = int(sys.argv[1])
+	generate_data(Distribution.BINOMIAL, data_size)
+	generate_data(Distribution.EXPONENTIAL, data_size)
+	generate_data(Distribution.LOGNORMAL, data_size)
+	generate_data(Distribution.NORMAL, data_size)
+	generate_data(Distribution.POISSON, data_size)
+	generate_data(Distribution.RANDOM, data_size)
