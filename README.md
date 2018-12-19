@@ -33,7 +33,7 @@ git clone https://github.com/daravinds/Learned-Index-Structures.git
 
 cd Learned-Index-Structures/
 git branch
-// The output should show current branch as master
+# The output should show current branch as master
 ```
 
 ### Instructions to run:
