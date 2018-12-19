@@ -5,7 +5,7 @@ A comparison of traditional index structures and machine-learning based variants
 
 ### Prerequisite packages:
 
-_B-Tree Variants_
+##### B-Tree Variants
 Requires Python 2.7.x and the following packages
 
 ```
@@ -13,7 +13,7 @@ pip install tensorflow
 pip install pandas
 pip install scikit-learn
 ```
-_Bloom Filter Variants_
+##### Bloom Filter Variants
 Requires Python 3.5.x and the following packages
 
 ```
@@ -33,65 +33,59 @@ git clone https://github.com/daravinds/Learned-Index-Structures.git
 
 cd Learned-Index-Structures/
 git branch
-// The output should show current branch as master
+# The output should show current branch as master
 ```
+
 ### Instructions to run:
 
-_B-Tree Variants_
+##### B-Tree Variants
 
 1. B-Tree index
 
-python indices/b_tree.py <filepath> <pagesize>
+*Usage*: `python indices/b_tree.py <filepath> <pagesize>`
 
-*Example*:
-	python indices/b_tree.py data/exponential.csv 64	
+*Example*: `python indices/b_tree.py data/exponential.csv 64`
 
 2. Linear regression index
 
-`python indices/linear_regression.py <filepath>`
+*Usage*: `python indices/linear_regression.py <filepath>`
 
-*Example*:
-	`python indices/linear_regression.py data/random.csv`
+*Example*: `python indices/linear_regression.py data/random.csv`
 
 3. Logistic regression index
 
-`python indices/logistic_regression.py <filepath>`
+*Usage*: `python indices/logistic_regression.py <filepath>`
 
-*Example*:
-	`python indices/logistic_regression.py data/random.csv`
+*Example*: `python indices/logistic_regression.py data/random.csv`
 
 4. Hybrid linear regression index
 
-`python indices/learned_b_tree.py -d <distribution> -m linear`
+*Usage*: `python indices/learned_b_tree.py -d <distribution> -m linear`
 
-*Example*:
-	`python indices/learned_b_tree.py -d lognormal -m linear`
+*Example*: `python indices/learned_b_tree.py -d lognormal -m linear`
 
 5. Hybrid logistic regression index
 
-`python indices/learned_b_tree.py -d <distribution> -m logistic`
+*Usage*: `python indices/learned_b_tree.py -d <distribution> -m logistic`
 
-*Example*:
-	`python indices/learned_b_tree.py -d lognormal -m logistic`
+*Example*: `python indices/learned_b_tree.py -d lognormal -m logistic`
 
 6. Hybrid neural network index
 
-`python indices/learned_b_tree.py -d <distribution> -m neural_net`
+*Usage*: `python indices/learned_b_tree.py -d <distribution> -m neural_net`
 
-*Example*:
-	`python indices/learned_b_tree.py -d exponential -m neural_net`
+*Example*: `python indices/learned_b_tree.py -d exponential -m neural_net`
 
 
-_Bloom Filter Variants_
-
+##### Bloom Filter Variants
 
 Both, the learned version of Bloom Filter and the traditional Bloom filter will be run on the same dataset using the below script. The dataset is picked out of a uniform distribution of integers. The size and spread of distribution can be controlled from the arguments given to the script.
 
 
-`python rbf_Model_BF.py <size_of_dataset> <spread> <seed>`
+*Usage*: `python rbf_Model_BF.py <size_of_dataset> <spread> <seed>`
 
-size_of_dataset - is the size of the dataset that you want to run the Bloom filter variations for.
-spread -  spread is the range of data that size_of_dataset points will be picked from.
+size_of_dataset - is the size of the dataset that you want to run the Bloom filter variations for.  
+spread -  spread is the range of data that size_of_dataset points will be picked from.  
 seed - integer for reproducible results
 
 Examples:
