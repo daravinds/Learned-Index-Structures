@@ -17,13 +17,14 @@ pip install sklearn
 
 On your terminal execute,
 
+```
 git clone https://github.com/daravinds/Learned-Index-Structures.git
 
 cd Learned-Index-Structures/
 git checkout Learned
 git branch
 // The output should show current branch as Learned
-
+```
 ### Instructions to run:
 
 1. B-Tree index
