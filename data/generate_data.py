@@ -7,8 +7,8 @@ from enum import Enum
 import os
 import sys
 
-DATA_SIZE = 100000
-BLOCK_SIZE = 10
+DATA_SIZE = 10000
+BLOCK_SIZE = 100
 
 class Distribution(Enum):
 	BINOMIAL = 0
@@ -54,7 +54,7 @@ def generate_data(distribution, data_size = DATA_SIZE):
 	elif distribution == Distribution.LOGNORMAL:
 		multiplicant = 10000
 
-	data_path = os.path.join(os.getcwd(), "data", Distribution.to_string(distribution) + ".csv")
+	data_path = os.path.join(os.getcwd(), Distribution.to_string(distribution) + ".csv")
 	with open(data_path, 'wb') as csv_file:
 		csv_writer = csv.writer(csv_file)
 		for index, number in enumerate(data):
