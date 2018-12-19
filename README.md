@@ -84,10 +84,8 @@ Both, the learned version of Bloom Filter and the traditional Bloom filter will 
 
 *Usage*: `python rbf_Model_BF.py <size_of_dataset> <spread> <seed>`
 
-size_of_dataset - is the size of the dataset that you want to run the Bloom filter variations for.
-
-spread -  spread is the range of data that size_of_dataset points will be picked from.
-
+size_of_dataset - is the size of the dataset that you want to run the Bloom filter variations for.  
+spread -  spread is the range of data that size_of_dataset points will be picked from.  
 seed - integer for reproducible results
 
 Examples:
