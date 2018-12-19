@@ -6,9 +6,12 @@ A comparison of traditional index structures and machine-learning based variants
 ### Prerequisite packages:
 
 Requires Python 2.7.x and the following packages
-`pip install tensorflow`
-`pip install pandas`
-`pip install sklearn`
+
+```
+pip install tensorflow
+pip install pandas
+pip install sklearn
+```
 
 ### Download instructions:
 
